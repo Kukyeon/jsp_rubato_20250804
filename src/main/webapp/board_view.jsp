@@ -59,7 +59,7 @@
             </article>
             <nav id="sub_menu">
                 <ul>
-                    <li><a href="board_list.html">+ 자유 게시판</a></li>
+                    <li><a href="board_list.jsp">+ 자유 게시판</a></li>
                     <li><a href="#">+ 방 명 록</a></li>
                     <li><a href="#">+ 공지 사항</a></li>
                     <li><a href="#">+ 등업 요청</a></li>

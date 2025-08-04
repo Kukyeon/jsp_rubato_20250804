@@ -13,17 +13,37 @@
     <link rel="stylesheet" href="css/footer.css" type="text/css">
 </head>
 <body>
+	<%
+	
+		String sessionId = (String) session.getAttribute("memberId");
+		// 로그인 성공하여 본 페이지를 방문하면 sessionId 값은 로그인한 아이디가 저장
+		// 비로그인 상태에서 본 페이지를 방문하면 sessionId 값은 null
+	%>
+	
+	
     <div id="wrap">
         <header> <!-- 헤더 -->
-            <a href="index.html"><img id="logo" src="images/logo.png"></a>
+            <a href="index.jsp"><img id="logo" src="images/logo.png"></a>
             
             <nav id="top_menu">
-                HOME | LOGIN | JOIN | NOTICE
+                HOME | 
+                <% if(sessionId == null){ %>
+                LOGIN
+                <% } else { %>
+                LOGOUT
+                 <% }%>
+                 | 
+                 <% if(sessionId == null){ %>
+                 JOIN
+                 <% } else { %>
+                 LEVEL 3
+                 <% }%>
+                  | NOTICE
             </nav>
 
             <nav id="main_menu">
                 <ul>
-                    <li><a href="board_list.html">자유게시판</a></li>
+                    <li><a href="board_list.jsp">자유게시판</a></li>
                     <li><a href="#">기타 연주</a></li>
                     <li><a href="#">공동 구매</a></li>
                     <li><a href="#">연주회 안내</a></li>
@@ -34,8 +54,8 @@
         </header>
         
         <aside> <!-- aside -->
-            
-            <article id="login_box">
+            <% if(sessionId == null){ %>
+            <article id="login_box"> <!--  로그인 박스  -->
                 <img id="login_title" src="images/ttl_login.png">
 
                 <div id="input_button">
@@ -53,7 +73,15 @@
                     <img src="images/btn_search.gif">
                 </div>
             </article>
-
+			<% } else { %>
+			<article id="login_box"> <!--  로그인 박스  -->
+                <img id="login_title" src="images/ttl_login.png">
+                <br>
+			<%= sessionId  %> 님 로그인중
+				<br>
+            </article>
+			<% } %>
+			
             <article id="gustbook">
                 <div id="gustbook_title">
                     <img src="images/ttl_memo.gif" alt="">

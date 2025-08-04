@@ -18,7 +18,7 @@
     <div id="wrap">
         <header> <!-- 헤더 -->
 
-            <a href="index.html"><img id="logo" src="images/logo.png"></a>
+            <a href="index.jsp"><img id="logo" src="images/logo.png"></a>
             
             <nav id="top_menu">
                 HOME | LOGIN | JOIN | NOTICE
@@ -58,7 +58,7 @@
             </article>
             <nav id="sub_menu">
                 <ul>
-                    <li><a href="board_list.html">+ 자유 게시판</a></li>
+                    <li><a href="board_list.jsp">+ 자유 게시판</a></li>
                     <li><a href="#">+ 방 명 록</a></li>
                     <li><a href="#">+ 공지 사항</a></li>
                     <li><a href="#">+ 등업 요청</a></li>
@@ -126,21 +126,21 @@
                 <tbody>
                     <tr>
                         <td class="col1">1</td>
-                        <td class="col2"><a href="board_view.html">선물인 보드카가 정말 독하네요</a></td>
+                        <td class="col2"><a href="board_view.jsp">선물인 보드카가 정말 독하네요</a></td>
                         <td class="col3">루바토</td>
                         <td class="col4">2025-07-15</td>
                         <td class="col5">15</td>
                     </tr>
                     <tr>
                         <td class="col1">2</td>
-                        <td class="col2"><a href="board_view.html">선물인 보드카가 정말 독하네요</a></td>
+                        <td class="col2"><a href="board_view.jsp">선물인 보드카가 정말 독하네요</a></td>
                         <td class="col3">루바토</td>
                         <td class="col4">2025-07-15</td>
                         <td class="col5">15</td>
                     </tr>
                     <tr>
                         <td class="col1">3</td>
-                        <td class="col2"><a href="board_view.html">선물인 보드카가 정말 독하네요</a></td>
+                        <td class="col2"><a href="board_view.jsp">선물인 보드카가 정말 독하네요</a></td>
                         <td class="col3">루바토</td>
                         <td class="col4">2025-07-15</td>
                         <td class="col5">15</td>
@@ -155,7 +155,7 @@
                 
                 <div class="button_col2">
                     <img src="images/list.png">
-                    <a href="board_wrihe.html"><img src="images/write.png"></a>
+                    <a href="board_wrihe.jsp"><img src="images/write.png"></a>
                 </div>
             </div>
 

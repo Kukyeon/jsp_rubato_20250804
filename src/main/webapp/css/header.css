@@ -1,0 +1,52 @@
+
+
+
+/* 상단 헤더 CSS */
+
+header {
+    /* border: 2px solid rgb(160, 25, 115); */
+    position: relative;
+    height: 100px;
+}
+
+header #logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+header #top_menu {
+    position: absolute;
+    top: 10px;
+    left: 770px;
+    
+}
+
+header #main_menu {
+    /* border: 1px solid red; */
+    width: 757px;
+    height: 38px;
+    background-image: url(../images/main_menu_bg.png);
+    background-repeat: no-repeat;  /* 배경 이미지 반복 제거 */
+    position: absolute;
+    top: 40px;
+    left: 200px;
+}
+header #main_menu li {
+    display: inline-block; /*마진 적용하려면 인라인블록으로 적용*/
+    font-size: 13px;
+    margin: 10px 30px 0 50px;
+}
+header #main_menu a:link {
+    text-decoration: none; /*하이퍼링크 밑줄 삭제*/
+    color: white; 
+}
+header #main_menu a:hover {
+    text-decoration: underline; /* 마우스 접촉시 언더바 표시 */
+    color: white; 
+}
+
+header #main_menu a:visited {
+    text-decoration: none; /* 클릭시 색상변경 삭제 */
+    color: white; 
+}

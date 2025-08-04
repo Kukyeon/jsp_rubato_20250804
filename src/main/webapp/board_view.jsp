@@ -16,6 +16,15 @@
     <link rel="stylesheet" href="css/board_view.css" type="text/css">
 </head>
 <body>
+
+	<%
+		String sid = (String) session.getAttribute("memberId");
+		if(sid == null){
+			response.sendRedirect("login.jsp");
+		}// 로그인 하지않으면 본 페이지를 볼수없슴
+	%>
+
+
     <div id="wrap">
         <header> <!-- 헤더 -->
 
@@ -40,7 +49,7 @@
         <aside> <!-- aside -->
             
             <article id="login_box">
-                <a href="index.html"><img id="logo" src="images/logo.png"></a>
+                <a href="index.jsp"><img id="logo" src="images/logo.png"></a>
 
                 <div id="input_button">
                     <form action="">
@@ -111,8 +120,8 @@
             </div>
             <div id="buttons">
                 <a href="#"><img src="images/delete.png"></a>
-                <a href="board_list.html"></a><img src="images/list.png"></a>
-                <a href="board_wrihe.html"></a><img src="images/write.png"></a>
+                <a href="board_list.jsp"></a><img src="images/list.png"></a>
+                <a href="board_wrihe.jsp"></a><img src="images/write.png"></a>
             <!-- <div id="total_search">
                 <div id="total">▷ 총 3개의 게시물이 있습니다. </div>
                 <div id="search">
